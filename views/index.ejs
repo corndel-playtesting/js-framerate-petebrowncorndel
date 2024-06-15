@@ -1,1 +1,23 @@
 <!-- Add your views in this folder -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameRate</title>
+</head>
+<body>
+    <h1>Welcome to FrameRate!</h1>
+    <h2>Read some reviews...</h2>
+    <ul>
+        <% movies.forEach(function(movie) { %>
+            <li>
+                <h3><%= movie.title %></h3>
+                <p>Release Date: <%= movie.releaseDate %></p>
+                <p>Genre: <%= movie.genre %></p>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
